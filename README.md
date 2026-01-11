@@ -65,19 +65,13 @@ The close alignment between training and validation accuracy indicates strong ge
 - This improves reliability and reduces false confident predictions.
 
 ## Project Flow Diagram
-///
-Input Image
-↓
-RGB Feature Extraction ──┐
-├─ Attention-based Feature Fusion
-FFT Feature Extraction ──┘
-↓
+Input Image 
+-->  (RGB Feature Extraction + FFT Feature Extraction) >> Attention-based Feature Fusion -->
 EfficientNet-B3 Backbone
-↓
+-->
 Softmax Classification
-↓
+-->
 Prediction + Confidence Score
-///
 
 # Deployment
 The trained model is deployed as a "public web application" using "Gradio" on "Hugging Face Spaces".  
