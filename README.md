@@ -13,7 +13,7 @@ With the rapid advancement of generative AI models, distinguishing real images f
 This project addresses the problem by leveraging "transfer learning", "frequency-domain analysis", and an "attention-based fusion mechanism" to improve detection accuracy. The final trained model is deployed as a "public web application" using "Hugging Face Spaces", allowing real-time inference through a simple user interface.
 
 
-#------------------------------ Model Architecture & Approach--------------------------------
+##------------------------------ Model Architecture & Approach--------------------------------
 
 # Transfer Learning Backbone
 - EfficientNet-B3 (pretrained on ImageNet) is used as the backbone model.
@@ -98,4 +98,6 @@ Users can upload images through the web interface and instantly receive predicti
 <img width="646" height="712" alt="Screenshot 2026-01-11 212337" src="https://github.com/user-attachments/assets/da5d083f-b68c-4a48-a9bf-a95d7a6ee655" />
 
 <img width="683" height="589" alt="Screenshot 2026-01-11 212348" src="https://github.com/user-attachments/assets/540b7529-b4b8-4469-9c3e-083c6cd948a7" />
+
+
 These photos include the tested examples and the metrics like Precision, F1 score, Recall and confusion matrix on validation data
