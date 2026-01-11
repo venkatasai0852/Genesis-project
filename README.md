@@ -13,8 +13,8 @@ With the rapid advancement of generative AI models, distinguishing real images f
 This project addresses the problem by leveraging "transfer learning", "frequency-domain analysis", and an "attention-based fusion mechanism" to improve detection accuracy. The final trained model is deployed as a "public web application" using "Hugging Face Spaces", allowing real-time inference through a simple user interface.
 
 
-## Model Architecture & Approach
-# Transfer Learning Backbone
+# Model Architecture & Approach
+## Transfer Learning Backbone
 - EfficientNet-B3 (pretrained on ImageNet) is used as the backbone model.
 - Transfer learning helps leverage rich pretrained visual features while reducing training time.
 - The final classification layer is modified for binary classification:
@@ -22,7 +22,7 @@ This project addresses the problem by leveraging "transfer learning", "frequency
   - AI Generated Image
 
 
-# Input Feature Design (RGB + FFT)
+## Input Feature Design (RGB + FFT)
 To enhance robustness and capture subtle AI-generated artifacts, the model uses "dual-domain input features":
 
 - "RGB Features"  
@@ -33,7 +33,7 @@ To enhance robustness and capture subtle AI-generated artifacts, the model uses 
 
 Both RGB and FFT representations are combined to improve generalization and detection accuracy.
 
-# Attention Mechanism
+## Attention Mechanism
 An "attention mechanism" is applied between the "RGB feature stream and the FFT feature stream" to:
 - Emphasize discriminative features
 - Suppress irrelevant or noisy information
@@ -41,7 +41,7 @@ An "attention mechanism" is applied between the "RGB feature stream and the FFT 
 
 This attention-based fusion enables the model to focus on subtle patterns indicative of AI-generated content.
 
-# Training Strategy
+## Training Strategy
 - The model was trained using "transfer learning".
 - Initially, the pretrained "EfficientNet-B3 weights were frozen" to stabilize training.
 - Total training was performed for "20 epochs".
@@ -51,20 +51,20 @@ This attention-based fusion enables the model to focus on subtle patterns indica
 
 This staged training strategy helped achieve high accuracy while avoiding overfitting.
 
-# Model Performance
+## Model Performance
 - Training Accuracy: 98.4%
 - Validation Accuracy: 97.6%
 
 The close alignment between training and validation accuracy indicates strong generalization performance.
 
 
-# Inference & Confidence Control
+## Inference & Confidence Control
 - Softmax probabilities are used for final classification.
 - A confidence thresholding mechanism is applied:
   - Predictions with low confidence are labeled as **“Uncertain”**
 - This improves reliability and reduces false confident predictions.
 
-# Project Flow Diagram
+## Project Flow Diagram
 Input Image
 ↓
 RGB Feature Extraction ──┐
