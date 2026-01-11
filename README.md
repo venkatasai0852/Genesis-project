@@ -64,26 +64,20 @@ The close alignment between training and validation accuracy indicates strong ge
   - Predictions with low confidence are labeled as **“Uncertain”**
 - This improves reliability and reduces false confident predictions.
 
-## 🔄 Project Flow Diagram
-
-```mermaid
-flowchart TD
-    A[Input Image]
-    B[RGB Feature Extraction]
-    C[FFT Feature Extraction]
-    D[Attention-based Feature Fusion]
-    E[EfficientNet-B3 Backbone]
-    F[Softmax Classification]
-    G[Prediction + Confidence Score]
-
-    A --> B
-    A --> C
-    B --> D
-    C --> D
-    D --> E
-    E --> F
-    F --> G
-
+## Project Flow Diagram
+///
+Input Image
+↓
+RGB Feature Extraction ──┐
+├─ Attention-based Feature Fusion
+FFT Feature Extraction ──┘
+↓
+EfficientNet-B3 Backbone
+↓
+Softmax Classification
+↓
+Prediction + Confidence Score
+///
 
 # Deployment
 The trained model is deployed as a "public web application" using "Gradio" on "Hugging Face Spaces".  
