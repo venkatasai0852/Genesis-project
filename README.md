@@ -95,4 +95,4 @@ Users can upload images through the web interface and instantly receive predicti
 <img width="683" height="589" alt="Screenshot 2026-01-11 212348" src="https://github.com/user-attachments/assets/540b7529-b4b8-4469-9c3e-083c6cd948a7" />
 
 
-These photos include the tested examples and the metrics like Precision, F1 score, Recall and confusion matrix on validation data
+These photos include the tested examples and the metrics like Precision, F1 score, Recall and confusion matrix on validation data during the model training
