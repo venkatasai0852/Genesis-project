@@ -88,11 +88,12 @@ Users can upload images through the web interface and instantly receive predicti
 - Integration of transformer-based architectures
 - Large-scale cloud deployment
 
+
+These photos include the tested examples and the metrics like Precision, F1 score, Recall and confusion matrix on validation data during the model training
+
+
 <img width="1268" height="338" alt="Screenshot 2026-01-11 212257" src="https://github.com/user-attachments/assets/3ec6679d-2c2f-498d-b373-779ff4757a9d" />
 
 <img width="646" height="712" alt="Screenshot 2026-01-11 212337" src="https://github.com/user-attachments/assets/da5d083f-b68c-4a48-a9bf-a95d7a6ee655" />
 
 <img width="683" height="589" alt="Screenshot 2026-01-11 212348" src="https://github.com/user-attachments/assets/540b7529-b4b8-4469-9c3e-083c6cd948a7" />
-
-
-These photos include the tested examples and the metrics like Precision, F1 score, Recall and confusion matrix on validation data during the model training
