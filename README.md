@@ -6,6 +6,7 @@ https://venkatasai0852-venkata-sai-genesis-project.hf.space
 This project focuses on detecting whether an image is "AI-generated or real" using a deep learning–based approach.  
 The system takes an image as input and outputs a prediction along with a confidence score.
 .........
+.............
 # Project Overview
 
 With the rapid advancement of generative AI models, distinguishing real images from AI-generated images has become increasingly challenging.  
